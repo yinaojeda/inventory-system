@@ -4,10 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class CategoriesManager extends Component
+class CategoryTable extends Component
 {
     public function render()
     {
-        return view('livewire.categories-manager');
+        return view('livewire.category-table');
     }
 }

@@ -4,24 +4,19 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Category;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
+
 
 class CategoryForm extends Component
 {
+    use LivewireAlert;
     public $categoryId;
     public $name;
 
+    protected $listeners = ['editCategory'];
     protected $rules = [
         'name' => 'required|string|max:255',
     ];
-
-    protected $listeners = ['editCategory'];
-
-    public function resetForm()
-    {
-        $this->categoryId = null;
-        $this->name = '';
-        $this->resetValidation();
-    }
 
     public function save()
     {
@@ -46,5 +41,11 @@ class CategoryForm extends Component
     public function render()
     {
         return view('livewire.category-form');
+    }
+    public function resetForm()
+    {
+        $this->categoryId = null;
+        $this->name = '';
+        $this->resetValidation();
     }
 }

@@ -1,31 +1,14 @@
+
 <x-app-layout>
-    <div class="max-w-4xl mx-auto px-4 py-8 space-y-6">
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Category Management') }}
+        </h2>
+    </x-slot>
 
-        {{-- Title --}}
-        <div>
-            <h1 class="text-4xl font-extrabold text-white flex items-center space-x-2">
-                <span>📁</span>
-                <span>Category Management</span>
-            </h1>
-            <p class="text-gray-400 mt-1">Manage your product categories below</p>
-        </div>
-
-        {{-- Card Container --}}
-        <div class="bg-gray-800 rounded-2xl shadow-md p-6 border border-gray-700 space-y-8">
-
-            {{-- Category Form --}}
-            <div>
-                <livewire:category-form />
-            </div>
-        </div>
-        <div class="bg-gray-800 rounded-2xl shadow-md p-6 border border-gray-700 space-y-8">
-            <hr class="border-gray-600">
-
-            {{-- Category List --}}
-            <div>
-                <livewire:category-list />
-            </div>
-        </div>
-
+    <div class="py-12 space-y-10 max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <livewire:category-form />
+        <livewire:category-list />
     </div>
 </x-app-layout>
+

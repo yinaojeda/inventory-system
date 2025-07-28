@@ -1,18 +1,17 @@
 ## Inventory System
-
 A simple Inventory Management System featuring user registration and login, with modules to manage Products and Categories.
 I built it as part of my learning process with PHP and Laravel.
-The main goal was to practice CRUD and parent-child structure.
+The main goal was to practice CRUD and parent-child structure.  
 ---
 ## 📌 Features
 - User registration and login system
 - Manage product categories
-- Add, edit, and delete products linked to categories
+- Add, edit, and delete products linked to categories  
 ---
 ## 🛠 Technologies Used
 - Backend: PHP with Laravel Framework
 - Database: PostgreSQL
-- Frontend: Blade Templates
+- Frontend: Blade Templates  
 ---
 ## Installation
 1. Clone the repo  
